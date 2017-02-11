@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07944DA4DA98EB1624691D20 /* Pods_KompisKlanenTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B289612175B960339E40C5E7 /* Pods_KompisKlanenTests.framework */; };
+		1DBE95B81E48EB39002B1FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE95B71E48EB39002B1FCF /* AppDelegate.swift */; };
+		1DBE95BD1E48EB39002B1FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DBE95BB1E48EB39002B1FCF /* Main.storyboard */; };
+		1DBE95BF1E48EB39002B1FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DBE95BE1E48EB39002B1FCF /* Assets.xcassets */; };
+		1DBE95C21E48EB39002B1FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DBE95C01E48EB39002B1FCF /* LaunchScreen.storyboard */; };
+		1DBE95CD1E48EB39002B1FCF /* KompisKlanenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE95CC1E48EB39002B1FCF /* KompisKlanenTests.swift */; };
+		1DBE95D81E48EB39002B1FCF /* KompisKlanenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE95D71E48EB39002B1FCF /* KompisKlanenUITests.swift */; };
+		1DBE95E61E48EC03002B1FCF /* TwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE95E51E48EC03002B1FCF /* TwitchTableViewCell.swift */; };
+		1DBE95E81E48EC38002B1FCF /* TwitchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE95E71E48EC38002B1FCF /* TwitchTableViewController.swift */; };
+		1DBE95EA1E4904C1002B1FCF /* TwitchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE95E91E4904C1002B1FCF /* TwitchDetailViewController.swift */; };
+		1DBE95EC1E4912FA002B1FCF /* KompisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE95EB1E4912FA002B1FCF /* KompisViewController.swift */; };
+		6289359DABB60571A2D784B9 /* Pods_KompisKlanenUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E0B8252FD29FB492FBD0AE /* Pods_KompisKlanenUITests.framework */; };
+		7153F746445C5B6EF381A6B5 /* Pods_KompisKlanen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B1125CA3C0BACA4DA5C4D7 /* Pods_KompisKlanen.framework */; };
+		C3D31B541E4F2CDF00D3ACF3 /* ZergTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D31B531E4F2CDF00D3ACF3 /* ZergTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DBE95C91E48EB39002B1FCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DBE95AC1E48EB39002B1FCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DBE95B31E48EB39002B1FCF;
+			remoteInfo = KompisKlanen;
+		};
+		1DBE95D41E48EB39002B1FCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DBE95AC1E48EB39002B1FCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DBE95B31E48EB39002B1FCF;
+			remoteInfo = KompisKlanen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1099F851C04412EAC69BA4E8 /* Pods-KompisKlanenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KompisKlanenTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KompisKlanenTests/Pods-KompisKlanenTests.release.xcconfig"; sourceTree = "<group>"; };
+		1DBE95B41E48EB39002B1FCF /* KompisKlanen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KompisKlanen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DBE95B71E48EB39002B1FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1DBE95BC1E48EB39002B1FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1DBE95BE1E48EB39002B1FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1DBE95C11E48EB39002B1FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1DBE95C31E48EB39002B1FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DBE95C81E48EB39002B1FCF /* KompisKlanenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KompisKlanenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DBE95CC1E48EB39002B1FCF /* KompisKlanenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KompisKlanenTests.swift; sourceTree = "<group>"; };
+		1DBE95CE1E48EB39002B1FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DBE95D31E48EB39002B1FCF /* KompisKlanenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KompisKlanenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DBE95D71E48EB39002B1FCF /* KompisKlanenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KompisKlanenUITests.swift; sourceTree = "<group>"; };
+		1DBE95D91E48EB39002B1FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DBE95E51E48EC03002B1FCF /* TwitchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchTableViewCell.swift; sourceTree = "<group>"; };
+		1DBE95E71E48EC38002B1FCF /* TwitchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchTableViewController.swift; sourceTree = "<group>"; };
+		1DBE95E91E4904C1002B1FCF /* TwitchDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchDetailViewController.swift; sourceTree = "<group>"; };
+		1DBE95EB1E4912FA002B1FCF /* KompisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KompisViewController.swift; sourceTree = "<group>"; };
+		64B1125CA3C0BACA4DA5C4D7 /* Pods_KompisKlanen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KompisKlanen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0D1EABFABE039EF6FBCEF3 /* Pods-KompisKlanen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KompisKlanen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KompisKlanen/Pods-KompisKlanen.debug.xcconfig"; sourceTree = "<group>"; };
+		82FD225D22D84F34917EE759 /* Pods-KompisKlanenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KompisKlanenTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KompisKlanenTests/Pods-KompisKlanenTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8FC9AED124DB14693EC78222 /* Pods-KompisKlanen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KompisKlanen.release.xcconfig"; path = "Pods/Target Support Files/Pods-KompisKlanen/Pods-KompisKlanen.release.xcconfig"; sourceTree = "<group>"; };
+		907D98EE47AE7A54EF2CDF3C /* Pods-KompisKlanenUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KompisKlanenUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KompisKlanenUITests/Pods-KompisKlanenUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B289612175B960339E40C5E7 /* Pods_KompisKlanenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KompisKlanenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E0B8252FD29FB492FBD0AE /* Pods_KompisKlanenUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KompisKlanenUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D31B531E4F2CDF00D3ACF3 /* ZergTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZergTableViewController.swift; sourceTree = "<group>"; };
+		D53F673D26728AEE0EF7F6B1 /* Pods-KompisKlanenUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KompisKlanenUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KompisKlanenUITests/Pods-KompisKlanenUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DBE95B11E48EB39002B1FCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7153F746445C5B6EF381A6B5 /* Pods_KompisKlanen.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DBE95C51E48EB39002B1FCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07944DA4DA98EB1624691D20 /* Pods_KompisKlanenTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DBE95D01E48EB39002B1FCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6289359DABB60571A2D784B9 /* Pods_KompisKlanenUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DBE95AB1E48EB39002B1FCF = {
+			isa = PBXGroup;
+			children = (
+				1DBE95B61E48EB39002B1FCF /* KompisKlanen */,
+				1DBE95CB1E48EB39002B1FCF /* KompisKlanenTests */,
+				1DBE95D61E48EB39002B1FCF /* KompisKlanenUITests */,
+				1DBE95B51E48EB39002B1FCF /* Products */,
+				C8FF7A8CBB3952E8F6B2C156 /* Pods */,
+				C4A6A65396DDCAB758AEA4BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1DBE95B51E48EB39002B1FCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DBE95B41E48EB39002B1FCF /* KompisKlanen.app */,
+				1DBE95C81E48EB39002B1FCF /* KompisKlanenTests.xctest */,
+				1DBE95D31E48EB39002B1FCF /* KompisKlanenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DBE95B61E48EB39002B1FCF /* KompisKlanen */ = {
+			isa = PBXGroup;
+			children = (
+				C3D31B551E4F2CF600D3ACF3 /* Twitch */,
+				1DBE95B71E48EB39002B1FCF /* AppDelegate.swift */,
+				1DBE95EB1E4912FA002B1FCF /* KompisViewController.swift */,
+				1DBE95BB1E48EB39002B1FCF /* Main.storyboard */,
+				1DBE95BE1E48EB39002B1FCF /* Assets.xcassets */,
+				1DBE95C01E48EB39002B1FCF /* LaunchScreen.storyboard */,
+				1DBE95C31E48EB39002B1FCF /* Info.plist */,
+			);
+			path = KompisKlanen;
+			sourceTree = "<group>";
+		};
+		1DBE95CB1E48EB39002B1FCF /* KompisKlanenTests */ = {
+			isa = PBXGroup;
+			children = (
+				1DBE95CC1E48EB39002B1FCF /* KompisKlanenTests.swift */,
+				1DBE95CE1E48EB39002B1FCF /* Info.plist */,
+			);
+			path = KompisKlanenTests;
+			sourceTree = "<group>";
+		};
+		1DBE95D61E48EB39002B1FCF /* KompisKlanenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1DBE95D71E48EB39002B1FCF /* KompisKlanenUITests.swift */,
+				1DBE95D91E48EB39002B1FCF /* Info.plist */,
+			);
+			path = KompisKlanenUITests;
+			sourceTree = "<group>";
+		};
+		C3D31B551E4F2CF600D3ACF3 /* Twitch */ = {
+			isa = PBXGroup;
+			children = (
+				1DBE95E51E48EC03002B1FCF /* TwitchTableViewCell.swift */,
+				1DBE95E91E4904C1002B1FCF /* TwitchDetailViewController.swift */,
+				1DBE95E71E48EC38002B1FCF /* TwitchTableViewController.swift */,
+				C3D31B531E4F2CDF00D3ACF3 /* ZergTableViewController.swift */,
+			);
+			name = Twitch;
+			sourceTree = "<group>";
+		};
+		C4A6A65396DDCAB758AEA4BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64B1125CA3C0BACA4DA5C4D7 /* Pods_KompisKlanen.framework */,
+				B289612175B960339E40C5E7 /* Pods_KompisKlanenTests.framework */,
+				B6E0B8252FD29FB492FBD0AE /* Pods_KompisKlanenUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8FF7A8CBB3952E8F6B2C156 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E0D1EABFABE039EF6FBCEF3 /* Pods-KompisKlanen.debug.xcconfig */,
+				8FC9AED124DB14693EC78222 /* Pods-KompisKlanen.release.xcconfig */,
+				82FD225D22D84F34917EE759 /* Pods-KompisKlanenTests.debug.xcconfig */,
+				1099F851C04412EAC69BA4E8 /* Pods-KompisKlanenTests.release.xcconfig */,
+				D53F673D26728AEE0EF7F6B1 /* Pods-KompisKlanenUITests.debug.xcconfig */,
+				907D98EE47AE7A54EF2CDF3C /* Pods-KompisKlanenUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DBE95B31E48EB39002B1FCF /* KompisKlanen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DBE95DC1E48EB39002B1FCF /* Build configuration list for PBXNativeTarget "KompisKlanen" */;
+			buildPhases = (
+				F1B9E30385D0350D2269F724 /* [CP] Check Pods Manifest.lock */,
+				1DBE95B01E48EB39002B1FCF /* Sources */,
+				1DBE95B11E48EB39002B1FCF /* Frameworks */,
+				1DBE95B21E48EB39002B1FCF /* Resources */,
+				01E259CB222FB10761AADFFC /* [CP] Embed Pods Frameworks */,
+				84E531A993EBFB6C9F4561F0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KompisKlanen;
+			productName = KompisKlanen;
+			productReference = 1DBE95B41E48EB39002B1FCF /* KompisKlanen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1DBE95C71E48EB39002B1FCF /* KompisKlanenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DBE95DF1E48EB39002B1FCF /* Build configuration list for PBXNativeTarget "KompisKlanenTests" */;
+			buildPhases = (
+				2D8CE4316D43F79B33418D23 /* [CP] Check Pods Manifest.lock */,
+				1DBE95C41E48EB39002B1FCF /* Sources */,
+				1DBE95C51E48EB39002B1FCF /* Frameworks */,
+				1DBE95C61E48EB39002B1FCF /* Resources */,
+				FBF32E4CA311239BD57BBD58 /* [CP] Embed Pods Frameworks */,
+				49C168ED9C56839DBF67F443 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DBE95CA1E48EB39002B1FCF /* PBXTargetDependency */,
+			);
+			name = KompisKlanenTests;
+			productName = KompisKlanenTests;
+			productReference = 1DBE95C81E48EB39002B1FCF /* KompisKlanenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1DBE95D21E48EB39002B1FCF /* KompisKlanenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DBE95E21E48EB39002B1FCF /* Build configuration list for PBXNativeTarget "KompisKlanenUITests" */;
+			buildPhases = (
+				463BF3BBFEBFDB3EAFAEFDC9 /* [CP] Check Pods Manifest.lock */,
+				1DBE95CF1E48EB39002B1FCF /* Sources */,
+				1DBE95D01E48EB39002B1FCF /* Frameworks */,
+				1DBE95D11E48EB39002B1FCF /* Resources */,
+				DB331D6FA1231A83F1D07CA9 /* [CP] Embed Pods Frameworks */,
+				9AF408E62E2F6CABB4E4B248 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DBE95D51E48EB39002B1FCF /* PBXTargetDependency */,
+			);
+			name = KompisKlanenUITests;
+			productName = KompisKlanenUITests;
+			productReference = 1DBE95D31E48EB39002B1FCF /* KompisKlanenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DBE95AC1E48EB39002B1FCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = robzkidev;
+				TargetAttributes = {
+					1DBE95B31E48EB39002B1FCF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 34RD9LH8PW;
+						ProvisioningStyle = Automatic;
+					};
+					1DBE95C71E48EB39002B1FCF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 34RD9LH8PW;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1DBE95B31E48EB39002B1FCF;
+					};
+					1DBE95D21E48EB39002B1FCF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 34RD9LH8PW;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1DBE95B31E48EB39002B1FCF;
+					};
+				};
+			};
+			buildConfigurationList = 1DBE95AF1E48EB39002B1FCF /* Build configuration list for PBXProject "KompisKlanen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1DBE95AB1E48EB39002B1FCF;
+			productRefGroup = 1DBE95B51E48EB39002B1FCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DBE95B31E48EB39002B1FCF /* KompisKlanen */,
+				1DBE95C71E48EB39002B1FCF /* KompisKlanenTests */,
+				1DBE95D21E48EB39002B1FCF /* KompisKlanenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DBE95B21E48EB39002B1FCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DBE95C21E48EB39002B1FCF /* LaunchScreen.storyboard in Resources */,
+				1DBE95BF1E48EB39002B1FCF /* Assets.xcassets in Resources */,
+				1DBE95BD1E48EB39002B1FCF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DBE95C61E48EB39002B1FCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DBE95D11E48EB39002B1FCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01E259CB222FB10761AADFFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KompisKlanen/Pods-KompisKlanen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D8CE4316D43F79B33418D23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		463BF3BBFEBFDB3EAFAEFDC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		49C168ED9C56839DBF67F443 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KompisKlanenTests/Pods-KompisKlanenTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84E531A993EBFB6C9F4561F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KompisKlanen/Pods-KompisKlanen-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AF408E62E2F6CABB4E4B248 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KompisKlanenUITests/Pods-KompisKlanenUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB331D6FA1231A83F1D07CA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KompisKlanenUITests/Pods-KompisKlanenUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1B9E30385D0350D2269F724 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FBF32E4CA311239BD57BBD58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KompisKlanenTests/Pods-KompisKlanenTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DBE95B01E48EB39002B1FCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DBE95EC1E4912FA002B1FCF /* KompisViewController.swift in Sources */,
+				1DBE95EA1E4904C1002B1FCF /* TwitchDetailViewController.swift in Sources */,
+				1DBE95E61E48EC03002B1FCF /* TwitchTableViewCell.swift in Sources */,
+				C3D31B541E4F2CDF00D3ACF3 /* ZergTableViewController.swift in Sources */,
+				1DBE95B81E48EB39002B1FCF /* AppDelegate.swift in Sources */,
+				1DBE95E81E48EC38002B1FCF /* TwitchTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DBE95C41E48EB39002B1FCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DBE95CD1E48EB39002B1FCF /* KompisKlanenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DBE95CF1E48EB39002B1FCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DBE95D81E48EB39002B1FCF /* KompisKlanenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DBE95CA1E48EB39002B1FCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DBE95B31E48EB39002B1FCF /* KompisKlanen */;
+			targetProxy = 1DBE95C91E48EB39002B1FCF /* PBXContainerItemProxy */;
+		};
+		1DBE95D51E48EB39002B1FCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DBE95B31E48EB39002B1FCF /* KompisKlanen */;
+			targetProxy = 1DBE95D41E48EB39002B1FCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1DBE95BB1E48EB39002B1FCF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DBE95BC1E48EB39002B1FCF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1DBE95C01E48EB39002B1FCF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DBE95C11E48EB39002B1FCF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DBE95DA1E48EB39002B1FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1DBE95DB1E48EB39002B1FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DBE95DD1E48EB39002B1FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E0D1EABFABE039EF6FBCEF3 /* Pods-KompisKlanen.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 34RD9LH8PW;
+				INFOPLIST_FILE = KompisKlanen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = robzkidev.KompisKlanen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1DBE95DE1E48EB39002B1FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FC9AED124DB14693EC78222 /* Pods-KompisKlanen.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 34RD9LH8PW;
+				INFOPLIST_FILE = KompisKlanen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = robzkidev.KompisKlanen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1DBE95E01E48EB39002B1FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82FD225D22D84F34917EE759 /* Pods-KompisKlanenTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 34RD9LH8PW;
+				INFOPLIST_FILE = KompisKlanenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = robzkidev.KompisKlanenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KompisKlanen.app/KompisKlanen";
+			};
+			name = Debug;
+		};
+		1DBE95E11E48EB39002B1FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1099F851C04412EAC69BA4E8 /* Pods-KompisKlanenTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 34RD9LH8PW;
+				INFOPLIST_FILE = KompisKlanenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = robzkidev.KompisKlanenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KompisKlanen.app/KompisKlanen";
+			};
+			name = Release;
+		};
+		1DBE95E31E48EB39002B1FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D53F673D26728AEE0EF7F6B1 /* Pods-KompisKlanenUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 34RD9LH8PW;
+				INFOPLIST_FILE = KompisKlanenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = robzkidev.KompisKlanenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KompisKlanen;
+			};
+			name = Debug;
+		};
+		1DBE95E41E48EB39002B1FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 907D98EE47AE7A54EF2CDF3C /* Pods-KompisKlanenUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 34RD9LH8PW;
+				INFOPLIST_FILE = KompisKlanenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = robzkidev.KompisKlanenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KompisKlanen;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DBE95AF1E48EB39002B1FCF /* Build configuration list for PBXProject "KompisKlanen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBE95DA1E48EB39002B1FCF /* Debug */,
+				1DBE95DB1E48EB39002B1FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DBE95DC1E48EB39002B1FCF /* Build configuration list for PBXNativeTarget "KompisKlanen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBE95DD1E48EB39002B1FCF /* Debug */,
+				1DBE95DE1E48EB39002B1FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DBE95DF1E48EB39002B1FCF /* Build configuration list for PBXNativeTarget "KompisKlanenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBE95E01E48EB39002B1FCF /* Debug */,
+				1DBE95E11E48EB39002B1FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DBE95E21E48EB39002B1FCF /* Build configuration list for PBXNativeTarget "KompisKlanenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBE95E31E48EB39002B1FCF /* Debug */,
+				1DBE95E41E48EB39002B1FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DBE95AC1E48EB39002B1FCF /* Project object */;
+}
