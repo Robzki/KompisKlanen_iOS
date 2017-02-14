@@ -15,7 +15,7 @@
             <objects>
                 <tableViewController id="oNf-3B-KYJ" customClass="TwitchTableViewController" customModule="KompisKlanen" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vps-Lp-vEp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" red="1" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -81,11 +81,11 @@
                         <viewControllerLayoutGuide type="bottom" id="cpa-wy-3Ou"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zL3-7z-Ltl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jQg-sM-U7I">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
@@ -197,10 +197,13 @@
             <objects>
                 <navigationController id="w2Y-In-Dar" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Twitch" image="Twitch" selectedImage="Twitch" id="UX1-hE-gEz"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ur0-TQ-8yi">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="Ur0-TQ-8yi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="oNf-3B-KYJ" kind="relationship" relationship="rootViewController" id="QA3-b3-9zw"/>
@@ -286,7 +289,7 @@
         <!--Root View Controller-->
         <scene sceneID="AK4-fl-WkA">
             <objects>
-                <tableViewController id="frf-TL-DV1" customClass="ZergTableViewController" customModule="KompisKlanen" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="frf-TL-DV1" customClass="TerranTableViewController" customModule="KompisKlanen" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mTg-k7-TkB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

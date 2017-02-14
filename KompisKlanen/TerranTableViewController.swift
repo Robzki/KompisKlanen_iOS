@@ -1,28 +1,30 @@
 //
-//  ZergTableViewController.swift
+//  TerranTableViewController.swift
 //  KompisKlanen
 //
-//  Created by Robert Elfström on 2017-02-11.
+//  Created by Robert Elfström on 2017-02-14.
 //  Copyright © 2017 robzkidev. All rights reserved.
 //
 
 import UIKit
 import Alamofire
 import SwiftyJSON
+import AlamofireImage
 
-class ZergTableViewController: UITableViewController {
-    
+class TerranTableViewController: UITableViewController, UIAlertViewDelegate {
     
     var builds = [[String : Any]]()
     
     var refreshCtrl : UIRefreshControl!
     let kompisColor = UIColor(hexString: "#FF9900")
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.refreshCtrl = UIRefreshControl()
-        self.refreshCtrl.addTarget(self, action: #selector(ZergTableViewController.refreshTableView), for: .valueChanged)
+        self.refreshCtrl.addTarget(self, action: #selector(TerranTableViewController.refreshTableView), for: .valueChanged)
         self.refreshControl = self.refreshCtrl
         
         self.refreshCtrl.backgroundColor = UIColor.black
@@ -30,29 +32,22 @@ class ZergTableViewController: UITableViewController {
         
         self.tableView.separatorColor = kompisColor
         self.tableView.backgroundColor = UIColor.black
+        self.tableView.separatorInset.left = 0
         
         
-        self.navigationItem.title = "Zerg Builds"
+        self.navigationItem.title = "Terran Builds"
         
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        refreshTableView()
     }
     
     func refreshTableView(){
         
-        Alamofire.request("https://robzkidev.se/Zerg.json").responseJSON { (responseData) -> Void in
+        Alamofire.request("https://robzkidev.se/Terran.json").responseJSON { (responseData) -> Void in
             
             switch responseData.result {
                 
             case .success:
-                print("ny hämtar vi ZergBuilds")
-            
+                print("ny hämtar vi TerranBuilds")
+                
                 let swiftyJsonVar = JSON(responseData.result.value!)
                 
                 
@@ -61,18 +56,28 @@ class ZergTableViewController: UITableViewController {
                     
                     self.tableView.reloadData()
                     self.refreshCtrl.endRefreshing()
-            }
-            
+                }
+                
             case .failure(let error):
                 print(error)
+                
+                let alertController = UIAlertController(title: "Ingen data fanns, lata jävla kodapa", message: "", preferredStyle: .alert)
+                
+                let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                alertController.addAction(defaultAction)
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                    
+                
+                self.tableView.reloadData()
+                self.refreshCtrl.endRefreshing()
+            }
+            
         }
         
     }
-        
-}
-    
-        
-    
+
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -95,7 +100,6 @@ class ZergTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
         // Configure the cell...
-        
         var dict = builds[indexPath.row]
         cell.textLabel?.text = dict["Title"] as? String
         cell.detailTextLabel?.text = dict["Description"] as? String
@@ -106,7 +110,7 @@ class ZergTableViewController: UITableViewController {
 
         return cell
     }
-    
+ 
 
     /*
     // Override to support conditional editing of the table view.

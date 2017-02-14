@@ -34,7 +34,7 @@ class TwitchTableViewController: UITableViewController {
         self.refreshCtrl.tintColor = UIColor.black
         
         
-
+        
         
         downloadVideos()
     }
@@ -53,6 +53,7 @@ class TwitchTableViewController: UITableViewController {
                 
             case .success:
                 print("nu hämtar vi kompisfilmer, KAPPA!")
+            //    self.tablView.alertMessage(message: "nu hämtar vi lite filmer, KAPPA!")
             
             let json = JSON(response.result.value!)
             

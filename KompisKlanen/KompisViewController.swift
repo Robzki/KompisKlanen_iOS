@@ -7,18 +7,20 @@
 //
 
 import UIKit
+import SafariServices
 
-class KompisViewController: UIViewController {
+class KompisViewController: UIViewController, SFSafariViewControllerDelegate {
     
     @IBOutlet weak var webView: UIWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         let url = NSURL (string: "http://www.kompisklanen.se")
         let request = NSURLRequest(url: url! as URL)
         webView.loadRequest(request as URLRequest)
-        
         
        
         // Do any additional setup after loading the view.
