@@ -31,6 +31,8 @@ class ZergTableViewController: UITableViewController {
         self.tableView.separatorColor = kompisColor
         self.tableView.backgroundColor = UIColor.black
         
+        self.tableView.separatorInset.left = 0
+        
         
         self.navigationItem.title = "Zerg Builds"
         
@@ -46,7 +48,7 @@ class ZergTableViewController: UITableViewController {
     
     func refreshTableView(){
         
-        Alamofire.request("https://robzkidev.se/Zerg.json").responseJSON { (responseData) -> Void in
+        Alamofire.request("https://robzkidev.se/KompisKlanen/Zerg.json").validate(statusCode: 200..<300).responseJSON { (responseData) -> Void in
             
             switch responseData.result {
                 
@@ -57,7 +59,8 @@ class ZergTableViewController: UITableViewController {
                 
                 
                 if let resData = swiftyJsonVar["Zerg_builds"].arrayObject {
-                    self.builds = resData as! [[String:AnyObject]]
+                    self.builds = resData as! [[String:Any]]
+                    print(resData)
                     
                     self.tableView.reloadData()
                     self.refreshCtrl.endRefreshing()
@@ -65,12 +68,35 @@ class ZergTableViewController: UITableViewController {
             
             case .failure(let error):
                 print(error)
+                let alertController = UIAlertController(title: "Ingen data kunde hämtas, Robzki är lat....", message: "", preferredStyle: .alert)
+                
+                let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                alertController.addAction(defaultAction)
+                
+                self.present(alertController, animated: true, completion: nil)
+                
+                
+                self.tableView.reloadData()
+                self.refreshCtrl.endRefreshing()
+
         }
         
     }
         
 }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "zerg_details" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let controller = segue.destination as! ZergDetailViewController
+                
+                let videoString = builds[indexPath.row]
+                
+                controller.buildURL = videoString["URL"] as! String!
+                //print(videoString)
+            }
+        }
+    }
+
         
     
     override func didReceiveMemoryWarning() {

@@ -30,8 +30,8 @@ class TwitchTableViewController: UITableViewController {
         self.refreshCtrl.addTarget(self, action: #selector(TwitchTableViewController.refreshTableView), for: .valueChanged)
         self.refreshControl = self.refreshCtrl
         
-        self.refreshCtrl.backgroundColor = kompisColor
-        self.refreshCtrl.tintColor = UIColor.black
+        self.refreshCtrl.backgroundColor = UIColor.black
+        self.refreshCtrl.tintColor = kompisColor
         
         
         
@@ -46,7 +46,7 @@ class TwitchTableViewController: UITableViewController {
         
         
         
-        Alamofire.request(urlString).responseJSON { response in
+        Alamofire.request(urlString).validate(statusCode:200..<300).responseJSON { response in
             
             
             switch response.result {
@@ -71,6 +71,17 @@ class TwitchTableViewController: UITableViewController {
                 
             case .failure(let error):
                 print(error)
+                
+                let alertController = UIAlertController(title: "Ingen data kunde hämtas, Twitch är lata", message: "", preferredStyle: .alert)
+                
+                let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                alertController.addAction(defaultAction)
+                
+                self.present(alertController, animated: true, completion: nil)
+                
+                
+                self.tableView.reloadData()
+                self.refreshCtrl.endRefreshing()
             }
         }
         
