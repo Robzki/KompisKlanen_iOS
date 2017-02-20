@@ -20,13 +20,13 @@
 		1DBE95EC1E4912FA002B1FCF /* KompisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE95EB1E4912FA002B1FCF /* KompisViewController.swift */; };
 		6289359DABB60571A2D784B9 /* Pods_KompisKlanenUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E0B8252FD29FB492FBD0AE /* Pods_KompisKlanenUITests.framework */; };
 		7153F746445C5B6EF381A6B5 /* Pods_KompisKlanen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B1125CA3C0BACA4DA5C4D7 /* Pods_KompisKlanen.framework */; };
+		C311B07B1E57BCD5008D5150 /* BuildsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311B07A1E57BCD5008D5150 /* BuildsTableViewCell.swift */; };
 		C39B67371E5714F7005A2EAE /* ProtossTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39B67361E5714F7005A2EAE /* ProtossTableViewController.swift */; };
 		C39B67391E5715AB005A2EAE /* ProtossDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39B67381E5715AB005A2EAE /* ProtossDetailViewController.swift */; };
 		C39B673B1E571748005A2EAE /* TerranDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39B673A1E571748005A2EAE /* TerranDetailViewController.swift */; };
 		C3D31B541E4F2CDF00D3ACF3 /* ZergTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D31B531E4F2CDF00D3ACF3 /* ZergTableViewController.swift */; };
 		C3D31B571E53239700D3ACF3 /* TerranTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D31B561E53239700D3ACF3 /* TerranTableViewController.swift */; };
 		C3D31B591E546DCF00D3ACF3 /* ZergDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D31B581E546DCF00D3ACF3 /* ZergDetailViewController.swift */; };
-		C3D31B5E1E55C32300D3ACF3 /* ZergTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D31B5D1E55C32300D3ACF3 /* ZergTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,13 +71,13 @@
 		907D98EE47AE7A54EF2CDF3C /* Pods-KompisKlanenUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KompisKlanenUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KompisKlanenUITests/Pods-KompisKlanenUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B289612175B960339E40C5E7 /* Pods_KompisKlanenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KompisKlanenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E0B8252FD29FB492FBD0AE /* Pods_KompisKlanenUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KompisKlanenUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C311B07A1E57BCD5008D5150 /* BuildsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildsTableViewCell.swift; sourceTree = "<group>"; };
 		C39B67361E5714F7005A2EAE /* ProtossTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtossTableViewController.swift; sourceTree = "<group>"; };
 		C39B67381E5715AB005A2EAE /* ProtossDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtossDetailViewController.swift; sourceTree = "<group>"; };
 		C39B673A1E571748005A2EAE /* TerranDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerranDetailViewController.swift; sourceTree = "<group>"; };
 		C3D31B531E4F2CDF00D3ACF3 /* ZergTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZergTableViewController.swift; sourceTree = "<group>"; };
 		C3D31B561E53239700D3ACF3 /* TerranTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerranTableViewController.swift; sourceTree = "<group>"; };
 		C3D31B581E546DCF00D3ACF3 /* ZergDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZergDetailViewController.swift; sourceTree = "<group>"; };
-		C3D31B5D1E55C32300D3ACF3 /* ZergTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZergTableViewCell.swift; sourceTree = "<group>"; };
 		D53F673D26728AEE0EF7F6B1 /* Pods-KompisKlanenUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KompisKlanenUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KompisKlanenUITests/Pods-KompisKlanenUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +134,7 @@
 		1DBE95B61E48EB39002B1FCF /* KompisKlanen */ = {
 			isa = PBXGroup;
 			children = (
+				C311B07A1E57BCD5008D5150 /* BuildsTableViewCell.swift */,
 				C3D31B5C1E55C30E00D3ACF3 /* Protoss */,
 				C3D31B5B1E55C2FD00D3ACF3 /* Terran */,
 				C3D31B5A1E55C2EF00D3ACF3 /* Zerg */,
@@ -181,7 +182,6 @@
 			children = (
 				C3D31B531E4F2CDF00D3ACF3 /* ZergTableViewController.swift */,
 				C3D31B581E546DCF00D3ACF3 /* ZergDetailViewController.swift */,
-				C3D31B5D1E55C32300D3ACF3 /* ZergTableViewCell.swift */,
 			);
 			name = Zerg;
 			sourceTree = "<group>";
@@ -513,8 +513,8 @@
 			files = (
 				1DBE95EC1E4912FA002B1FCF /* KompisViewController.swift in Sources */,
 				C39B67391E5715AB005A2EAE /* ProtossDetailViewController.swift in Sources */,
+				C311B07B1E57BCD5008D5150 /* BuildsTableViewCell.swift in Sources */,
 				1DBE95EA1E4904C1002B1FCF /* TwitchDetailViewController.swift in Sources */,
-				C3D31B5E1E55C32300D3ACF3 /* ZergTableViewCell.swift in Sources */,
 				1DBE95E61E48EC03002B1FCF /* TwitchTableViewCell.swift in Sources */,
 				C3D31B591E546DCF00D3ACF3 /* ZergDetailViewController.swift in Sources */,
 				C39B673B1E571748005A2EAE /* TerranDetailViewController.swift in Sources */,

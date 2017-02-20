@@ -44,7 +44,7 @@ class ProtossTableViewController: UITableViewController {
     
     func refreshTableView(){
         
-        Alamofire.request("https://robzkidev.se/KompisKlanen/Protoss.json").validate(statusCode:200..<300).responseJSON { (responseData) -> Void in
+        Alamofire.request("http://robzkidev.se/KompisKlanen/Protoss.json").validate(statusCode:200..<300).responseJSON { (responseData) -> Void in
             
             switch responseData.result {
                 
@@ -56,6 +56,7 @@ class ProtossTableViewController: UITableViewController {
                 
                 if let resData = swiftyJsonVar["Protoss_builds"].arrayObject {
                     self.builds = resData as! [[String:AnyObject]]
+                    print(resData)
                     
                     self.tableView.reloadData()
                     self.refreshCtrl.endRefreshing()
@@ -121,6 +122,7 @@ class ProtossTableViewController: UITableViewController {
         var dict = builds[indexPath.row]
         cell.textLabel?.text = dict["Title"] as? String
         cell.detailTextLabel?.text = dict["Description"] as? String
+        cell.imageView?.image = UIImage(named:"toss_builds.png")
         
         cell.backgroundColor = UIColor.black
         cell.textLabel?.textColor = kompisColor

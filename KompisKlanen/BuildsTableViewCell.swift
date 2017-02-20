@@ -1,14 +1,14 @@
 //
-//  ZergTableViewCell.swift
+//  BuildsTableViewCell.swift
 //  KompisKlanen
 //
-//  Created by Robert Elfström on 2017-02-16.
+//  Created by Robert Elfström on 2017-02-18.
 //  Copyright © 2017 robzkidev. All rights reserved.
 //
 
 import UIKit
 
-class ZergTableViewCell: UITableViewCell {
+class BuildsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var buildTitleLabel: UILabel!
     @IBOutlet weak var buildRvRLabel: UILabel!

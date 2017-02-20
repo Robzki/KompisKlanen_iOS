@@ -125,6 +125,7 @@ class ZergTableViewController: UITableViewController {
         var dict = builds[indexPath.row]
         cell.textLabel?.text = dict["Title"] as? String
         cell.detailTextLabel?.text = dict["Description"] as? String
+        cell.imageView?.image = UIImage(named:"zerg_builds.png")
         
         cell.backgroundColor = UIColor.black
         cell.textLabel?.textColor = kompisColor
