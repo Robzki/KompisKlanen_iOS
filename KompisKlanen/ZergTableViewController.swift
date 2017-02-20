@@ -48,6 +48,8 @@ class ZergTableViewController: UITableViewController {
     
     func refreshTableView(){
         
+        URLCache.shared.removeAllCachedResponses()
+        
         Alamofire.request("https://robzkidev.se/KompisKlanen/Zerg.json").validate(statusCode: 200..<300).responseJSON { (responseData) -> Void in
             
             switch responseData.result {

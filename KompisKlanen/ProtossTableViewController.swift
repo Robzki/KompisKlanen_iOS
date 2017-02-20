@@ -12,12 +12,14 @@ import Alamofire
 import SwiftyJSON
 import AlamofireImage
 
-class ProtossTableViewController: UITableViewController {
+   class ProtossTableViewController: UITableViewController {
 
     var builds = [[String : Any]]()
     
     var refreshCtrl : UIRefreshControl!
     let kompisColor = UIColor(hexString: "#FF9900")
+    
+    var sessionManager: SessionManager!
     
     
     
@@ -43,6 +45,8 @@ class ProtossTableViewController: UITableViewController {
     }
     
     func refreshTableView(){
+        
+        URLCache.shared.removeAllCachedResponses()
         
         Alamofire.request("http://robzkidev.se/KompisKlanen/Protoss.json").validate(statusCode:200..<300).responseJSON { (responseData) -> Void in
             

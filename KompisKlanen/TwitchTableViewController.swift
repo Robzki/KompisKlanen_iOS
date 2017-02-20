@@ -44,7 +44,7 @@ class TwitchTableViewController: UITableViewController {
         
         let urlString = "https://api.twitch.tv/kraken/channels/KompisKlanen/videos?limit=100&client_id=ojzh3cc1s83vj46jrdgp3hkxj3honeu"
         
-        
+        URLCache.shared.removeAllCachedResponses()
         
         Alamofire.request(urlString).validate(statusCode:200..<300).responseJSON { response in
             
