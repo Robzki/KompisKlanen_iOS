@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import UserNotifications
+import OneSignal
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,9 +19,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        let kompisColor = UIColor(hexString: "#FF9900")
+        
         UIToolbar.appearance().barTintColor = UIColor.black
         UITabBar.appearance().barTintColor = UIColor.black
+        UINavigationBar.appearance().tintColor = UIColor.black
+        UINavigationBar.appearance().barTintColor = kompisColor
+        
+        UNUserNotificationCenter.current().requestAuthorization(options:[.badge, .alert, .sound]){ (granted, error) in }
+        application.registerForRemoteNotifications()
+        
+        //Add this line. Replace '5eb5a37e-b458-11e3-ac11-000c2940e62c' with your OneSignal App ID.
+        OneSignal.initWithLaunchOptions(launchOptions, appId: "20ec9f11-68bb-4d0a-99e3-6674f2f43139")
+        
+        // Call syncHashedEmail anywhere in your iOS app if you have the user's email.
+        // This improves the effectiveness of OneSignal's "best-time" notification scheduling feature.
+        // [OneSignal syncHashedEmail:userEmail];
+        
         return true
+    }
+    
+   // Called when APNs has assigned the device a unique token
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        // Convert token to string
+        let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
+        
+        // Print it to console
+        print("APNs device token: \(deviceTokenString)")
+        
+        // Persist it in your backend in case it's new
+    }
+    
+    // Called when APNs failed to register the device for push notifications
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        // Print the error to console (you should alert the user that registration failed)
+        print("APNs registration failed: \(error)")
+    }
+    
+    // Push notification received
+    func application(_ application: UIApplication, didReceiveRemoteNotification data: [AnyHashable : Any]) {
+        // Print notification payload data
+        print("Push notification received: \(data)")
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

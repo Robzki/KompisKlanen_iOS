@@ -30,8 +30,8 @@ class TwitchTableViewController: UITableViewController {
         self.refreshCtrl.addTarget(self, action: #selector(TwitchTableViewController.refreshTableView), for: .valueChanged)
         self.refreshControl = self.refreshCtrl
         
-        self.refreshCtrl.backgroundColor = UIColor.black
-        self.refreshCtrl.tintColor = kompisColor
+        self.refreshCtrl.backgroundColor = kompisColor
+        self.refreshCtrl.tintColor = UIColor.black
         
         
         

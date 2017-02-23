@@ -27,8 +27,8 @@ class TerranTableViewController: UITableViewController, UIAlertViewDelegate {
         self.refreshCtrl.addTarget(self, action: #selector(TerranTableViewController.refreshTableView), for: .valueChanged)
         self.refreshControl = self.refreshCtrl
         
-        self.refreshCtrl.backgroundColor = UIColor.black
-        self.refreshCtrl.tintColor = kompisColor
+        self.refreshCtrl.backgroundColor = kompisColor
+        self.refreshCtrl.tintColor = UIColor.black
         
         self.tableView.separatorColor = kompisColor
         self.tableView.backgroundColor = UIColor.black

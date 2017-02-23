@@ -8,6 +8,7 @@ target 'KompisKlanen’ do
   pod ‘SwiftyJSON’
   pod 'Alamofire', '~> 4.0'
   pod 'AlamofireImage', '~> 3.1'
+  pod 'OneSignal'
 
   target 'KompisKlanenTests' do
     inherit! :search_paths

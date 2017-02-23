@@ -20,7 +20,7 @@
 		1DBE95EC1E4912FA002B1FCF /* KompisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE95EB1E4912FA002B1FCF /* KompisViewController.swift */; };
 		6289359DABB60571A2D784B9 /* Pods_KompisKlanenUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E0B8252FD29FB492FBD0AE /* Pods_KompisKlanenUITests.framework */; };
 		7153F746445C5B6EF381A6B5 /* Pods_KompisKlanen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B1125CA3C0BACA4DA5C4D7 /* Pods_KompisKlanen.framework */; };
-		C311B07B1E57BCD5008D5150 /* BuildsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311B07A1E57BCD5008D5150 /* BuildsTableViewCell.swift */; };
+		C3850EA31E5F003F00F83B30 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3850EA21E5F003F00F83B30 /* UserNotifications.framework */; };
 		C39B67371E5714F7005A2EAE /* ProtossTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39B67361E5714F7005A2EAE /* ProtossTableViewController.swift */; };
 		C39B67391E5715AB005A2EAE /* ProtossDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39B67381E5715AB005A2EAE /* ProtossDetailViewController.swift */; };
 		C39B673B1E571748005A2EAE /* TerranDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39B673A1E571748005A2EAE /* TerranDetailViewController.swift */; };
@@ -71,7 +71,8 @@
 		907D98EE47AE7A54EF2CDF3C /* Pods-KompisKlanenUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KompisKlanenUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KompisKlanenUITests/Pods-KompisKlanenUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B289612175B960339E40C5E7 /* Pods_KompisKlanenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KompisKlanenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E0B8252FD29FB492FBD0AE /* Pods_KompisKlanenUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KompisKlanenUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C311B07A1E57BCD5008D5150 /* BuildsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildsTableViewCell.swift; sourceTree = "<group>"; };
+		C3850EA11E5EFF6E00F83B30 /* KompisKlanen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KompisKlanen.entitlements; sourceTree = "<group>"; };
+		C3850EA21E5F003F00F83B30 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		C39B67361E5714F7005A2EAE /* ProtossTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtossTableViewController.swift; sourceTree = "<group>"; };
 		C39B67381E5715AB005A2EAE /* ProtossDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtossDetailViewController.swift; sourceTree = "<group>"; };
 		C39B673A1E571748005A2EAE /* TerranDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerranDetailViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3850EA31E5F003F00F83B30 /* UserNotifications.framework in Frameworks */,
 				7153F746445C5B6EF381A6B5 /* Pods_KompisKlanen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,7 +136,7 @@
 		1DBE95B61E48EB39002B1FCF /* KompisKlanen */ = {
 			isa = PBXGroup;
 			children = (
-				C311B07A1E57BCD5008D5150 /* BuildsTableViewCell.swift */,
+				C3850EA11E5EFF6E00F83B30 /* KompisKlanen.entitlements */,
 				C3D31B5C1E55C30E00D3ACF3 /* Protoss */,
 				C3D31B5B1E55C2FD00D3ACF3 /* Terran */,
 				C3D31B5A1E55C2EF00D3ACF3 /* Zerg */,
@@ -207,6 +209,7 @@
 		C4A6A65396DDCAB758AEA4BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C3850EA21E5F003F00F83B30 /* UserNotifications.framework */,
 				64B1125CA3C0BACA4DA5C4D7 /* Pods_KompisKlanen.framework */,
 				B289612175B960339E40C5E7 /* Pods_KompisKlanenTests.framework */,
 				B6E0B8252FD29FB492FBD0AE /* Pods_KompisKlanenUITests.framework */,
@@ -306,6 +309,14 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 34RD9LH8PW;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					1DBE95C71E48EB39002B1FCF = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -513,7 +524,6 @@
 			files = (
 				1DBE95EC1E4912FA002B1FCF /* KompisViewController.swift in Sources */,
 				C39B67391E5715AB005A2EAE /* ProtossDetailViewController.swift in Sources */,
-				C311B07B1E57BCD5008D5150 /* BuildsTableViewCell.swift in Sources */,
 				1DBE95EA1E4904C1002B1FCF /* TwitchDetailViewController.swift in Sources */,
 				1DBE95E61E48EC03002B1FCF /* TwitchTableViewCell.swift in Sources */,
 				C3D31B591E546DCF00D3ACF3 /* ZergDetailViewController.swift in Sources */,
@@ -674,6 +684,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KompisKlanen/KompisKlanen.entitlements;
 				DEVELOPMENT_TEAM = 34RD9LH8PW;
 				INFOPLIST_FILE = KompisKlanen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -689,6 +700,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KompisKlanen/KompisKlanen.entitlements;
 				DEVELOPMENT_TEAM = 34RD9LH8PW;
 				INFOPLIST_FILE = KompisKlanen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

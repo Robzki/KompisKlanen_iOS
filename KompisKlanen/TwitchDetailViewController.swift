@@ -22,7 +22,6 @@ class TwitchDetailViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.navigationItem.title = (_videoTitle)
-        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.black
         
         let webUrl = URL(string: "https://player.twitch.tv/?video=" + _videoID)!
         let webRequest = URLRequest(url: webUrl)
