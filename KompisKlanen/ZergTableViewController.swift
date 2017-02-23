@@ -31,6 +31,10 @@ class ZergTableViewController: UITableViewController {
         self.tableView.separatorColor = kompisColor
         self.tableView.backgroundColor = UIColor.black
         
+        UINavigationBar.appearance().tintColor = UIColor.black
+        UINavigationBar.appearance().barTintColor = kompisColor
+        
+        
         self.tableView.separatorInset.left = 0
         
         
